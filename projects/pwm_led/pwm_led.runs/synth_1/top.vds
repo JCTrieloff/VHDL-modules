@@ -1,0 +1,628 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed Jul  6 12:00:39 2022
+# Process ID: 85308
+# Current directory: /home/jtrieloff/pwm_led/pwm_led.runs/synth_1
+# Command line: vivado -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: /home/jtrieloff/pwm_led/pwm_led.runs/synth_1/top.vds
+# Journal file: /home/jtrieloff/pwm_led/pwm_led.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 85379 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 2088.504 ; gain = 202.719 ; free physical = 943 ; free virtual = 16831
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [/home/jtrieloff/pwm_led/pwm_led.srcs/sources_1/imports/new/top.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'threshset' [/home/jtrieloff/pwm_led/pwm_led.srcs/sources_1/new/threshset.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'threshset' (1#1) [/home/jtrieloff/pwm_led/pwm_led.srcs/sources_1/new/threshset.vhd:44]
+INFO: [Synth 8-638] synthesizing module 'pwm_gen' [/home/jtrieloff/pwm_led/pwm_led.srcs/sources_1/new/pwm_gen.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'counter' [/home/jtrieloff/pwm_led/pwm_led.srcs/sources_1/new/counter.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'counter' (2#1) [/home/jtrieloff/pwm_led/pwm_led.srcs/sources_1/new/counter.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'comparator' [/home/jtrieloff/pwm_led/pwm_led.srcs/sources_1/new/comparator.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'comparator' (3#1) [/home/jtrieloff/pwm_led/pwm_led.srcs/sources_1/new/comparator.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'pwm_gen' (4#1) [/home/jtrieloff/pwm_led/pwm_led.srcs/sources_1/new/pwm_gen.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'top' (5#1) [/home/jtrieloff/pwm_led/pwm_led.srcs/sources_1/imports/new/top.vhd:42]
+WARNING: [Synth 8-3331] design threshset has unconnected port init[29]
+WARNING: [Synth 8-3331] design threshset has unconnected port init[28]
+WARNING: [Synth 8-3331] design threshset has unconnected port init[27]
+WARNING: [Synth 8-3331] design threshset has unconnected port init[26]
+WARNING: [Synth 8-3331] design threshset has unconnected port init[25]
+WARNING: [Synth 8-3331] design threshset has unconnected port init[24]
+WARNING: [Synth 8-3331] design threshset has unconnected port init[23]
+WARNING: [Synth 8-3331] design threshset has unconnected port init[22]
+WARNING: [Synth 8-3331] design threshset has unconnected port init[21]
+WARNING: [Synth 8-3331] design threshset has unconnected port init[20]
+WARNING: [Synth 8-3331] design threshset has unconnected port init[19]
+WARNING: [Synth 8-3331] design threshset has unconnected port init[18]
+WARNING: [Synth 8-3331] design threshset has unconnected port init[17]
+WARNING: [Synth 8-3331] design threshset has unconnected port init[16]
+WARNING: [Synth 8-3331] design threshset has unconnected port init[15]
+WARNING: [Synth 8-3331] design threshset has unconnected port init[14]
+WARNING: [Synth 8-3331] design threshset has unconnected port init[13]
+WARNING: [Synth 8-3331] design threshset has unconnected port init[12]
+WARNING: [Synth 8-3331] design threshset has unconnected port init[11]
+WARNING: [Synth 8-3331] design threshset has unconnected port init[10]
+WARNING: [Synth 8-3331] design threshset has unconnected port init[9]
+WARNING: [Synth 8-3331] design threshset has unconnected port init[8]
+WARNING: [Synth 8-3331] design threshset has unconnected port init[7]
+WARNING: [Synth 8-3331] design threshset has unconnected port init[6]
+WARNING: [Synth 8-3331] design threshset has unconnected port init[5]
+WARNING: [Synth 8-3331] design threshset has unconnected port init[4]
+WARNING: [Synth 8-3331] design threshset has unconnected port init[3]
+WARNING: [Synth 8-3331] design threshset has unconnected port init[2]
+WARNING: [Synth 8-3331] design threshset has unconnected port init[1]
+WARNING: [Synth 8-3331] design threshset has unconnected port init[0]
+WARNING: [Synth 8-3331] design threshset has unconnected port dinit
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 2150.254 ; gain = 264.469 ; free physical = 969 ; free virtual = 16857
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 2153.223 ; gain = 267.438 ; free physical = 962 ; free virtual = 16850
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 2153.223 ; gain = 267.438 ; free physical = 962 ; free virtual = 16850
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2153.223 ; gain = 0.000 ; free physical = 956 ; free virtual = 16844
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led1_b'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led1_g'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led1_r'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led2_b'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led2_g'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led2_r'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led3_b'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led3_g'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led3_r'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[0]'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[1]'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[2]'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[3]'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ja[0]'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ja[1]'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ja[2]'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ja[3]'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ja[4]'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ja[5]'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ja[6]'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:49]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ja[7]'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jb[0]'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:53]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jb[1]'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:54]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jb[2]'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:55]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jb[3]'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jb[4]'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jb[5]'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jb[6]'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jb[7]'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jc[0]'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jc[1]'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:64]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jc[2]'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:65]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jc[3]'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:66]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jc[4]'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:67]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:67]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jc[5]'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:68]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:68]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jc[6]'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:69]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:69]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jc[7]'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jd[0]'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:73]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:73]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jd[1]'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:74]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:74]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jd[2]'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:75]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:75]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jd[3]'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:76]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:76]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jd[4]'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:77]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:77]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jd[5]'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:78]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:78]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jd[6]'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:79]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:79]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jd[7]'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:80]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:80]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'uart_rxd_out'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:83]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:83]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'uart_txd_in'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:84]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:84]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_io0'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:87]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:87]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_io1'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:88]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:88]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_io2'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:89]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:89]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_io3'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:90]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:90]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_io4'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:91]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:91]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_io5'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:92]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:92]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_io6'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:93]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:93]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_io7'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:94]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:94]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_io8'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:95]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:95]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_io9'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:96]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:96]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_io10'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:97]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:97]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_io11'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:98]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:98]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_io12'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:99]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:99]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_io13'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:100]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:100]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_io26'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:103]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:103]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_io27'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:104]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:104]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_io28'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:105]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:105]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_io29'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:106]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:106]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_io30'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:107]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:107]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_io31'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:108]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:108]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_io32'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:109]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:109]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_io33'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:110]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:110]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_io34'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:111]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:111]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_io35'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:112]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:112]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_io36'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:113]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:113]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_io37'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:114]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:114]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_io38'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:115]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:115]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_io39'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:116]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:116]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_io40'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:117]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:117]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_io41'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:118]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:118]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vaux4_n'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:124]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:124]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vaux4_p'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:125]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:125]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vaux5_n'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:126]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:126]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vaux5_p'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:127]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:127]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vaux6_n'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:128]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:128]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vaux6_p'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:129]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:129]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vaux7_n'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:130]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:130]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vaux7_p'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:131]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:131]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vaux15_n'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:132]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:132]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vaux15_p'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:133]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:133]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vaux0_n'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:134]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:134]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vaux0_p'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:135]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:135]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_a0'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:138]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:138]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_a1'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:139]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:139]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_a2'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:140]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:140]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_a3'. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:141]
+INFO: [Common 17-14] Message 'Vivado 12-584' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:141]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc:141]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/jtrieloff/pwm_led/pwm_led.srcs/constrs_1/imports/jtrieloff/arty_a7-100t.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2279.957 ; gain = 0.000 ; free physical = 884 ; free virtual = 16772
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2279.957 ; gain = 0.000 ; free physical = 884 ; free virtual = 16772
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 2279.957 ; gain = 394.172 ; free physical = 933 ; free virtual = 16821
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 2279.957 ; gain = 394.172 ; free physical = 933 ; free virtual = 16821
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 2279.957 ; gain = 394.172 ; free physical = 933 ; free virtual = 16821
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/jtrieloff/pwm_led/pwm_led.srcs/sources_1/new/threshset.vhd:52]
+WARNING: [Synth 8-327] inferring latch for variable 'direction_reg' [/home/jtrieloff/pwm_led/pwm_led.srcs/sources_1/new/threshset.vhd:52]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 2279.957 ; gain = 394.172 ; free physical = 934 ; free virtual = 16823
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'sett0' (threshset) to 'sett2'
+INFO: [Synth 8-223] decloning instance 'pwm0' (pwm_gen) to 'pwm2'
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module threshset 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 2279.957 ; gain = 394.172 ; free physical = 913 ; free virtual = 16805
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 2279.957 ; gain = 394.172 ; free physical = 806 ; free virtual = 16698
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 2279.957 ; gain = 394.172 ; free physical = 804 ; free virtual = 16695
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 2279.957 ; gain = 394.172 ; free physical = 800 ; free virtual = 16692
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 2279.957 ; gain = 394.172 ; free physical = 800 ; free virtual = 16692
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 2279.957 ; gain = 394.172 ; free physical = 800 ; free virtual = 16692
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 2279.957 ; gain = 394.172 ; free physical = 800 ; free virtual = 16692
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 2279.957 ; gain = 394.172 ; free physical = 800 ; free virtual = 16692
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 2279.957 ; gain = 394.172 ; free physical = 800 ; free virtual = 16692
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 2279.957 ; gain = 394.172 ; free physical = 800 ; free virtual = 16692
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    24|
+|3     |LUT1   |    60|
+|4     |LUT2   |    60|
+|5     |LUT4   |    32|
+|6     |LUT5   |     2|
+|7     |LUT6   |    18|
+|8     |FDRE   |    76|
+|9     |LD     |     2|
+|10    |IBUF   |     2|
+|11    |OBUF   |     3|
++------+-------+------+
+
+Report Instance Areas: 
++------+----------+-------------+------+
+|      |Instance  |Module       |Cells |
++------+----------+-------------+------+
+|1     |top       |             |   280|
+|2     |  pwm0    |pwm_gen      |    56|
+|3     |    comp  |comparator_2 |     2|
+|4     |    count |counter      |    54|
+|5     |  pwm1    |pwm_gen_0    |     2|
+|6     |    comp  |comparator   |     2|
+|7     |  sett0   |threshset    |   108|
+|8     |  sett1   |threshset_1  |   108|
++------+----------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 2279.957 ; gain = 394.172 ; free physical = 800 ; free virtual = 16692
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 2279.957 ; gain = 267.438 ; free physical = 841 ; free virtual = 16733
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 2279.965 ; gain = 394.172 ; free physical = 841 ; free virtual = 16733
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2279.965 ; gain = 0.000 ; free physical = 906 ; free virtual = 16798
+INFO: [Netlist 29-17] Analyzing 26 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2279.965 ; gain = 0.000 ; free physical = 858 ; free virtual = 16750
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  LD => LDCE: 2 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+26 Infos, 132 Warnings, 100 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:41 . Memory (MB): peak = 2279.965 ; gain = 628.281 ; free physical = 980 ; free virtual = 16871
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2279.965 ; gain = 0.000 ; free physical = 980 ; free virtual = 16871
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/jtrieloff/pwm_led/pwm_led.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Jul  6 12:01:30 2022...
