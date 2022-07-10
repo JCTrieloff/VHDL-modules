@@ -1,0 +1,602 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sun Jul 10 22:19:07 2022
+# Process ID: 80841
+# Current directory: /home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/projects/neopixel/neopixel.runs/synth_1
+# Command line: vivado -log Head.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Head.tcl
+# Log file: /home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/projects/neopixel/neopixel.runs/synth_1/Head.vds
+# Journal file: /home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/projects/neopixel/neopixel.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source Head.tcl -notrace
+Command: synth_design -top Head -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 80878 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2079.645 ; gain = 201.719 ; free physical = 2832 ; free virtual = 17000
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-2551] possible infinite loop; process does not have a wait statement [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/projects/neopixel/neopixel.srcs/sources_1/new/colour_decoder.vhd:65]
+WARNING: [Synth 8-2551] possible infinite loop; process does not have a wait statement [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/projects/neopixel/neopixel.srcs/sources_1/new/Head.vhd:64]
+INFO: [Synth 8-638] synthesizing module 'Head' [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/projects/neopixel/neopixel.srcs/sources_1/new/Head.vhd:41]
+INFO: [Synth 8-638] synthesizing module 'colour_decoder' [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/projects/neopixel/neopixel.srcs/sources_1/new/colour_decoder.vhd:44]
+INFO: [Synth 8-638] synthesizing module 'counter' [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/projects/pwm_led/pwm_led.srcs/sources_1/new/counter.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'counter' (1#1) [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/projects/pwm_led/pwm_led.srcs/sources_1/new/counter.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'colour_decoder' (2#1) [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/projects/neopixel/neopixel.srcs/sources_1/new/colour_decoder.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'Head' (3#1) [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/projects/neopixel/neopixel.srcs/sources_1/new/Head.vhd:41]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 2138.395 ; gain = 260.469 ; free physical = 2854 ; free virtual = 17022
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2141.363 ; gain = 263.438 ; free physical = 2850 ; free virtual = 17018
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2141.363 ; gain = 263.438 ; free physical = 2850 ; free virtual = 17018
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2141.363 ; gain = 0.000 ; free physical = 2845 ; free virtual = 17013
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led0_b'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led0_g'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led0_r'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led1_b'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led1_g'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led1_r'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led2_b'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led2_g'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led2_r'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led3_b'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led3_g'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led3_r'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[0]'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[1]'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[2]'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[3]'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ja[0]'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ja[1]'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ja[2]'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ja[3]'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ja[4]'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ja[5]'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ja[6]'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:49]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ja[7]'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jb[0]'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:53]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jb[1]'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:54]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jb[2]'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:55]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jb[3]'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jb[4]'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jb[5]'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jb[6]'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jb[7]'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jc[0]'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jc[1]'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:64]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jc[2]'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:65]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jc[3]'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:66]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jc[4]'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:67]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:67]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jc[5]'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:68]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:68]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jc[6]'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:69]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:69]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jc[7]'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jd[0]'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:73]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:73]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jd[1]'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:74]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:74]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jd[2]'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:75]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:75]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jd[3]'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:76]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:76]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jd[4]'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:77]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:77]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jd[5]'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:78]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:78]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jd[6]'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:79]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:79]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jd[7]'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:80]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:80]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'uart_rxd_out'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:83]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:83]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'uart_txd_in'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:84]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:84]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_io0'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:87]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:87]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_io1'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:88]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:88]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_io2'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:89]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:89]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_io3'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:90]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:90]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_io4'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:91]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:91]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_io5'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:92]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:92]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_io6'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:93]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:93]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_io7'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:94]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:94]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_io8'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:95]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:95]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_io9'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:96]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:96]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_io10'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:97]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:97]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_io11'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:98]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:98]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_io12'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:99]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:99]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_io13'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:100]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:100]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_io26'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:103]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:103]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_io27'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:104]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:104]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_io28'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:105]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:105]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_io29'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:106]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:106]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_io30'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:107]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:107]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_io31'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:108]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:108]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_io32'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:109]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:109]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_io33'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:110]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:110]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_io34'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:111]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:111]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_io35'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:112]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:112]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_io36'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:113]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:113]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_io37'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:114]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:114]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_io38'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:115]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:115]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_io39'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:116]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:116]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_io40'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:117]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:117]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_io41'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:118]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:118]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vaux4_n'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:124]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:124]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vaux4_p'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:125]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:125]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vaux5_n'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:126]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:126]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vaux5_p'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:127]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:127]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vaux6_n'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:128]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:128]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vaux6_p'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:129]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:129]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vaux7_n'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:130]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:130]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vaux7_p'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:131]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:131]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vaux15_n'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:132]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:132]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vaux15_p'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:133]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:133]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vaux0_n'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:134]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:134]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vaux0_p'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:135]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:135]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_a0'. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:138]
+INFO: [Common 17-14] Message 'Vivado 12-584' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:138]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc:138]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/constraints/arty_a7-100t.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Head_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Head_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2268.098 ; gain = 0.000 ; free physical = 2766 ; free virtual = 16934
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2268.098 ; gain = 0.000 ; free physical = 2766 ; free virtual = 16934
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 2268.098 ; gain = 390.172 ; free physical = 2825 ; free virtual = 16993
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 2268.098 ; gain = 390.172 ; free physical = 2825 ; free virtual = 16993
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 2268.098 ; gain = 390.172 ; free physical = 2827 ; free virtual = 16996
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg' [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/projects/neopixel/neopixel.srcs/sources_1/new/colour_decoder.vhd:69]
+WARNING: [Synth 8-327] inferring latch for variable 'end_of_stream_reg' [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/projects/neopixel/neopixel.srcs/sources_1/new/colour_decoder.vhd:68]
+WARNING: [Synth 8-327] inferring latch for variable 'time_done_reg' [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/projects/neopixel/neopixel.srcs/sources_1/new/colour_decoder.vhd:69]
+WARNING: [Synth 8-327] inferring latch for variable 'offset_reg' [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/projects/neopixel/neopixel.srcs/sources_1/new/colour_decoder.vhd:69]
+WARNING: [Synth 8-327] inferring latch for variable 'rst_reg' [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/projects/neopixel/neopixel.srcs/sources_1/new/colour_decoder.vhd:61]
+WARNING: [Synth 8-327] inferring latch for variable 'enable_reg' [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/projects/neopixel/neopixel.srcs/sources_1/new/Head.vhd:54]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 2268.098 ; gain = 390.172 ; free physical = 2823 ; free virtual = 16992
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module colour_decoder 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 2268.098 ; gain = 390.172 ; free physical = 2806 ; free virtual = 16978
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 2268.098 ; gain = 390.172 ; free physical = 2702 ; free virtual = 16874
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 2268.098 ; gain = 390.172 ; free physical = 2686 ; free virtual = 16858
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 2268.098 ; gain = 390.172 ; free physical = 2686 ; free virtual = 16858
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 2268.098 ; gain = 390.172 ; free physical = 2686 ; free virtual = 16858
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 2268.098 ; gain = 390.172 ; free physical = 2686 ; free virtual = 16858
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 2268.098 ; gain = 390.172 ; free physical = 2686 ; free virtual = 16858
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 2268.098 ; gain = 390.172 ; free physical = 2686 ; free virtual = 16858
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 2268.098 ; gain = 390.172 ; free physical = 2686 ; free virtual = 16858
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 2268.098 ; gain = 390.172 ; free physical = 2686 ; free virtual = 16858
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |    24|
+|3     |LUT1   |    36|
+|4     |LUT2   |     1|
+|5     |LUT4   |    20|
+|6     |LUT5   |    36|
+|7     |LUT6   |    10|
+|8     |FDRE   |    64|
+|9     |LD     |    37|
+|10    |IBUF   |     1|
+|11    |OBUF   |     1|
++------+-------+------+
+
+Report Instance Areas: 
++------+-----------------+---------------+------+
+|      |Instance         |Module         |Cells |
++------+-----------------+---------------+------+
+|1     |top              |               |   232|
+|2     |  colour_decoder |colour_decoder |   177|
+|3     |    counter      |counter_0      |    58|
+|4     |  counter        |counter        |    50|
++------+-----------------+---------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 2268.098 ; gain = 390.172 ; free physical = 2686 ; free virtual = 16858
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 2268.098 ; gain = 263.438 ; free physical = 2741 ; free virtual = 16913
+Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 2268.105 ; gain = 390.172 ; free physical = 2741 ; free virtual = 16913
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2268.105 ; gain = 0.000 ; free physical = 2816 ; free virtual = 16988
+INFO: [Netlist 29-17] Analyzing 61 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 3 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2268.105 ; gain = 0.000 ; free physical = 2760 ; free virtual = 16932
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 37 instances were transformed.
+  LD => LDCE: 34 instances
+  LD => LDCE (inverted pins: G): 3 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+19 Infos, 108 Warnings, 100 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:40 . Memory (MB): peak = 2268.105 ; gain = 625.250 ; free physical = 2879 ; free virtual = 17051
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2268.105 ; gain = 0.000 ; free physical = 2879 ; free virtual = 17051
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/projects/neopixel/neopixel.runs/synth_1/Head.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Head_utilization_synth.rpt -pb Head_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Jul 10 22:19:56 2022...
