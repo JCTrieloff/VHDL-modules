@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
-| Date             : Sun Jul 10 22:21:15 2022
+| Date             : Mon Jul 11 16:14:35 2022
 | Host             : localhost.localdomain running 64-bit Fedora release 35 (Thirty Five)
 | Command          : report_power -file Head_power_routed.rpt -pb Head_power_summary_routed.pb -rpx Head_power_routed.rpx
 | Design           : Head
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.086        |
+| Total On-Chip Power (W)  | 0.100        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.002        |
-| Device Static (W)        | 0.084        |
+| Dynamic (W)              | 0.003        |
+| Device Static (W)        | 0.097        |
 | Effective TJA (C/W)      | 4.6          |
-| Max Ambient (C)          | 84.6         |
-| Junction Temperature (C) | 25.4         |
+| Max Ambient (C)          | 84.5         |
+| Junction Temperature (C) | 25.5         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,17 +52,17 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Clocks         |     0.001 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |      238 |       --- |             --- |
-|   LUT as Logic |    <0.001 |       96 |     63400 |            0.15 |
-|   CARRY4       |    <0.001 |       24 |     15850 |            0.15 |
+| Clocks         |    <0.001 |        3 |       --- |             --- |
+| Slice Logic    |    <0.001 |      307 |       --- |             --- |
+|   LUT as Logic |    <0.001 |      125 |     63400 |            0.20 |
+|   CARRY4       |    <0.001 |       28 |     15850 |            0.18 |
 |   Register     |    <0.001 |      101 |    126800 |            0.08 |
-|   BUFG         |    <0.001 |        1 |        32 |            3.13 |
-|   Others       |     0.000 |        9 |       --- |             --- |
-| Signals        |    <0.001 |      208 |       --- |             --- |
+|   BUFG         |    <0.001 |        3 |        32 |            9.38 |
+|   Others       |     0.000 |       10 |       --- |             --- |
+| Signals        |    <0.001 |      293 |       --- |             --- |
 | I/O            |    <0.001 |        2 |       210 |            0.95 |
-| Static Power   |     0.084 |          |           |                 |
-| Total          |     0.086 |          |           |                 |
+| Static Power   |     0.097 |          |           |                 |
+| Total          |     0.100 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -72,9 +72,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.017 |       0.002 |      0.015 |
+| Vccint    |       1.000 |     0.018 |       0.003 |      0.015 |
 | Vccaux    |       1.800 |     0.018 |       0.000 |      0.018 |
-| Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
+| Vcco33    |       3.300 |     0.004 |       0.000 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -138,11 +138,12 @@ Table of Contents
 3.1 By Hierarchy
 ----------------
 
-+------------------+-----------+
-| Name             | Power (W) |
-+------------------+-----------+
-| Head             |     0.002 |
-|   colour_decoder |     0.002 |
-+------------------+-----------+
++--------------------+-----------+
+| Name               | Power (W) |
++--------------------+-----------+
+| Head               |     0.003 |
+|   write_24b        |     0.003 |
+|     colour_decoder |     0.002 |
++--------------------+-----------+
 
 

@@ -2,8 +2,8 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Sun Jul 10 22:19:07 2022
-# Process ID: 80841
+# Start of session at: Mon Jul 11 16:12:17 2022
+# Process ID: 129266
 # Current directory: /home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/projects/neopixel/neopixel.runs/synth_1
 # Command line: vivado -log Head.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Head.tcl
 # Log file: /home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/projects/neopixel/neopixel.runs/synth_1/Head.vds
@@ -16,20 +16,31 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 80878 
+INFO: Helper process launched with PID 129324 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2079.645 ; gain = 201.719 ; free physical = 2832 ; free virtual = 17000
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2079.613 ; gain = 201.688 ; free physical = 131 ; free virtual = 17348
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-2551] possible infinite loop; process does not have a wait statement [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/projects/neopixel/neopixel.srcs/sources_1/new/colour_decoder.vhd:65]
-WARNING: [Synth 8-2551] possible infinite loop; process does not have a wait statement [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/projects/neopixel/neopixel.srcs/sources_1/new/Head.vhd:64]
 INFO: [Synth 8-638] synthesizing module 'Head' [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/projects/neopixel/neopixel.srcs/sources_1/new/Head.vhd:41]
+INFO: [Synth 8-638] synthesizing module 'write_24b' [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/projects/neopixel/neopixel.srcs/sources_1/new/write_24b.vhd:42]
 INFO: [Synth 8-638] synthesizing module 'colour_decoder' [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/projects/neopixel/neopixel.srcs/sources_1/new/colour_decoder.vhd:44]
 INFO: [Synth 8-638] synthesizing module 'counter' [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/projects/pwm_led/pwm_led.srcs/sources_1/new/counter.vhd:43]
 INFO: [Synth 8-256] done synthesizing module 'counter' (1#1) [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/projects/pwm_led/pwm_led.srcs/sources_1/new/counter.vhd:43]
+WARNING: [Synth 8-614] signal 'offset' is read in the process but is not in the sensitivity list [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/projects/neopixel/neopixel.srcs/sources_1/new/colour_decoder.vhd:62]
+WARNING: [Synth 8-614] signal 'enable' is read in the process but is not in the sensitivity list [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/projects/neopixel/neopixel.srcs/sources_1/new/colour_decoder.vhd:62]
+WARNING: [Synth 8-614] signal 'colour' is read in the process but is not in the sensitivity list [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/projects/neopixel/neopixel.srcs/sources_1/new/colour_decoder.vhd:62]
+WARNING: [Synth 8-614] signal 'mask' is read in the process but is not in the sensitivity list [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/projects/neopixel/neopixel.srcs/sources_1/new/colour_decoder.vhd:62]
+WARNING: [Synth 8-614] signal 'zero' is read in the process but is not in the sensitivity list [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/projects/neopixel/neopixel.srcs/sources_1/new/colour_decoder.vhd:62]
+WARNING: [Synth 8-614] signal 'time_done' is read in the process but is not in the sensitivity list [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/projects/neopixel/neopixel.srcs/sources_1/new/colour_decoder.vhd:62]
+WARNING: [Synth 8-614] signal 'count' is read in the process but is not in the sensitivity list [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/projects/neopixel/neopixel.srcs/sources_1/new/colour_decoder.vhd:62]
 INFO: [Synth 8-256] done synthesizing module 'colour_decoder' (2#1) [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/projects/neopixel/neopixel.srcs/sources_1/new/colour_decoder.vhd:44]
-INFO: [Synth 8-256] done synthesizing module 'Head' (3#1) [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/projects/neopixel/neopixel.srcs/sources_1/new/Head.vhd:41]
+WARNING: [Synth 8-614] signal 'enable' is read in the process but is not in the sensitivity list [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/projects/neopixel/neopixel.srcs/sources_1/new/write_24b.vhd:68]
+WARNING: [Synth 8-614] signal 'packets_sent' is read in the process but is not in the sensitivity list [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/projects/neopixel/neopixel.srcs/sources_1/new/write_24b.vhd:68]
+WARNING: [Synth 8-614] signal 'num_pixels' is read in the process but is not in the sensitivity list [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/projects/neopixel/neopixel.srcs/sources_1/new/write_24b.vhd:68]
+WARNING: [Synth 8-614] signal 'count' is read in the process but is not in the sensitivity list [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/projects/neopixel/neopixel.srcs/sources_1/new/write_24b.vhd:68]
+INFO: [Synth 8-256] done synthesizing module 'write_24b' (3#1) [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/projects/neopixel/neopixel.srcs/sources_1/new/write_24b.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'Head' (4#1) [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/projects/neopixel/neopixel.srcs/sources_1/new/Head.vhd:41]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 2138.395 ; gain = 260.469 ; free physical = 2854 ; free virtual = 17022
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2141.363 ; gain = 263.438 ; free physical = 194 ; free virtual = 17394
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -42,12 +53,12 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2141.363 ; gain = 263.438 ; free physical = 2850 ; free virtual = 17018
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 2141.363 ; gain = 263.438 ; free physical = 158 ; free virtual = 17358
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2141.363 ; gain = 263.438 ; free physical = 2850 ; free virtual = 17018
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 2141.363 ; gain = 263.438 ; free physical = 158 ; free virtual = 17358
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2141.363 ; gain = 0.000 ; free physical = 2845 ; free virtual = 17013
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2141.363 ; gain = 0.000 ; free physical = 152 ; free virtual = 17352
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -359,35 +370,37 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/Head_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2268.098 ; gain = 0.000 ; free physical = 2766 ; free virtual = 16934
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2266.098 ; gain = 0.000 ; free physical = 133 ; free virtual = 17320
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2268.098 ; gain = 0.000 ; free physical = 2766 ; free virtual = 16934
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2266.098 ; gain = 0.000 ; free physical = 133 ; free virtual = 17320
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 2268.098 ; gain = 390.172 ; free physical = 2825 ; free virtual = 16993
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 2266.098 ; gain = 388.172 ; free physical = 142 ; free virtual = 17330
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 2268.098 ; gain = 390.172 ; free physical = 2825 ; free virtual = 16993
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 2266.098 ; gain = 388.172 ; free physical = 142 ; free virtual = 17330
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 2268.098 ; gain = 390.172 ; free physical = 2827 ; free virtual = 16996
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 2266.098 ; gain = 388.172 ; free physical = 142 ; free virtual = 17330
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-327] inferring latch for variable 'data_reg' [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/projects/neopixel/neopixel.srcs/sources_1/new/colour_decoder.vhd:69]
-WARNING: [Synth 8-327] inferring latch for variable 'end_of_stream_reg' [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/projects/neopixel/neopixel.srcs/sources_1/new/colour_decoder.vhd:68]
-WARNING: [Synth 8-327] inferring latch for variable 'time_done_reg' [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/projects/neopixel/neopixel.srcs/sources_1/new/colour_decoder.vhd:69]
-WARNING: [Synth 8-327] inferring latch for variable 'offset_reg' [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/projects/neopixel/neopixel.srcs/sources_1/new/colour_decoder.vhd:69]
-WARNING: [Synth 8-327] inferring latch for variable 'rst_reg' [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/projects/neopixel/neopixel.srcs/sources_1/new/colour_decoder.vhd:61]
-WARNING: [Synth 8-327] inferring latch for variable 'enable_reg' [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/projects/neopixel/neopixel.srcs/sources_1/new/Head.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg' [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/projects/neopixel/neopixel.srcs/sources_1/new/colour_decoder.vhd:72]
+WARNING: [Synth 8-327] inferring latch for variable 'offset_reg' [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/projects/neopixel/neopixel.srcs/sources_1/new/colour_decoder.vhd:64]
+WARNING: [Synth 8-327] inferring latch for variable 'time_done_reg' [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/projects/neopixel/neopixel.srcs/sources_1/new/colour_decoder.vhd:72]
+WARNING: [Synth 8-327] inferring latch for variable 'rst_reg' [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/projects/neopixel/neopixel.srcs/sources_1/new/colour_decoder.vhd:58]
+WARNING: [Synth 8-327] inferring latch for variable 'colour_reg' [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/projects/neopixel/neopixel.srcs/sources_1/new/write_24b.vhd:58]
+WARNING: [Synth 8-327] inferring latch for variable 'enable_reg' [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/projects/neopixel/neopixel.srcs/sources_1/new/write_24b.vhd:56]
+WARNING: [Synth 8-327] inferring latch for variable 'packets_sent_reg' [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/projects/neopixel/neopixel.srcs/sources_1/new/write_24b.vhd:72]
+WARNING: [Synth 8-327] inferring latch for variable 'rst_reg' [/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/projects/neopixel/neopixel.srcs/sources_1/new/write_24b.vhd:64]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 2268.098 ; gain = 390.172 ; free physical = 2823 ; free virtual = 16992
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 2266.098 ; gain = 388.172 ; free physical = 144 ; free virtual = 17332
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -400,11 +413,11 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     32 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 2     
 +---Muxes : 
-	   2 Input     32 Bit        Muxes := 1     
-	   3 Input      1 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 8     
+	   3 Input      1 Bit        Muxes := 4     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -418,8 +431,15 @@ Detailed RTL Component Info :
 	   2 Input     32 Bit       Adders := 1     
 +---Muxes : 
 	   2 Input     32 Bit        Muxes := 1     
-	   3 Input      1 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+	   3 Input      1 Bit        Muxes := 4     
+Module write_24b 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -436,8 +456,34 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3886] merging instance 'write_24b/colour_reg[15]' (LD) to 'write_24b/colour_reg[23]'
+INFO: [Synth 8-3886] merging instance 'write_24b/colour_reg[23]' (LD) to 'write_24b/colour_reg[22]'
+INFO: [Synth 8-3886] merging instance 'write_24b/colour_reg[7]' (LD) to 'write_24b/colour_reg[22]'
+INFO: [Synth 8-3886] merging instance 'write_24b/colour_reg[11]' (LD) to 'write_24b/colour_reg[22]'
+INFO: [Synth 8-3886] merging instance 'write_24b/colour_reg[19]' (LD) to 'write_24b/colour_reg[22]'
+INFO: [Synth 8-3886] merging instance 'write_24b/colour_reg[3]' (LD) to 'write_24b/colour_reg[22]'
+INFO: [Synth 8-3886] merging instance 'write_24b/colour_reg[13]' (LD) to 'write_24b/colour_reg[22]'
+INFO: [Synth 8-3886] merging instance 'write_24b/colour_reg[21]' (LD) to 'write_24b/colour_reg[22]'
+INFO: [Synth 8-3886] merging instance 'write_24b/colour_reg[5]' (LD) to 'write_24b/colour_reg[22]'
+INFO: [Synth 8-3886] merging instance 'write_24b/colour_reg[9]' (LD) to 'write_24b/colour_reg[22]'
+INFO: [Synth 8-3886] merging instance 'write_24b/colour_reg[17]' (LD) to 'write_24b/colour_reg[22]'
+INFO: [Synth 8-3886] merging instance 'write_24b/colour_reg[1]' (LD) to 'write_24b/colour_reg[0]'
+INFO: [Synth 8-3886] merging instance 'write_24b/colour_reg[14]' (LD) to 'write_24b/colour_reg[22]'
+INFO: [Synth 8-3886] merging instance 'write_24b/colour_reg[22]' (LD) to 'write_24b/colour_reg[20]'
+INFO: [Synth 8-3886] merging instance 'write_24b/colour_reg[6]' (LD) to 'write_24b/colour_reg[20]'
+INFO: [Synth 8-3886] merging instance 'write_24b/colour_reg[10]' (LD) to 'write_24b/colour_reg[20]'
+INFO: [Synth 8-3886] merging instance 'write_24b/colour_reg[18]' (LD) to 'write_24b/colour_reg[20]'
+INFO: [Synth 8-3886] merging instance 'write_24b/colour_reg[2]' (LD) to 'write_24b/colour_reg[20]'
+INFO: [Synth 8-3886] merging instance 'write_24b/colour_reg[12]' (LD) to 'write_24b/colour_reg[20]'
+INFO: [Synth 8-3886] merging instance 'write_24b/colour_reg[20]' (LD) to 'write_24b/colour_reg[16]'
+INFO: [Synth 8-3886] merging instance 'write_24b/colour_reg[4]' (LD) to 'write_24b/colour_reg[16]'
+INFO: [Synth 8-3886] merging instance 'write_24b/colour_reg[8]' (LD) to 'write_24b/colour_reg[16]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\write_24b/colour_reg[16] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\write_24b/colour_reg[0] )
+WARNING: [Synth 8-3332] Sequential element (write_24b/colour_reg[16]) is unused and will be removed from module Head.
+WARNING: [Synth 8-3332] Sequential element (write_24b/colour_reg[0]) is unused and will be removed from module Head.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 2268.098 ; gain = 390.172 ; free physical = 2806 ; free virtual = 16978
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 2266.098 ; gain = 388.172 ; free physical = 120 ; free virtual = 17314
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -449,13 +495,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 2268.098 ; gain = 390.172 ; free physical = 2702 ; free virtual = 16874
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:24 . Memory (MB): peak = 2266.098 ; gain = 388.172 ; free physical = 126 ; free virtual = 17266
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 2268.098 ; gain = 390.172 ; free physical = 2686 ; free virtual = 16858
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 2266.098 ; gain = 388.172 ; free physical = 152 ; free virtual = 17244
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -467,7 +513,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 2268.098 ; gain = 390.172 ; free physical = 2686 ; free virtual = 16858
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 2266.098 ; gain = 388.172 ; free physical = 152 ; free virtual = 17244
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -491,13 +537,13 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 2268.098 ; gain = 390.172 ; free physical = 2686 ; free virtual = 16858
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 2266.098 ; gain = 388.172 ; free physical = 133 ; free virtual = 17228
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 2268.098 ; gain = 390.172 ; free physical = 2686 ; free virtual = 16858
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 2266.098 ; gain = 388.172 ; free physical = 133 ; free virtual = 17228
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -516,25 +562,25 @@ Report Check Netlist:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 2268.098 ; gain = 390.172 ; free physical = 2686 ; free virtual = 16858
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 2266.098 ; gain = 388.172 ; free physical = 133 ; free virtual = 17228
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 2268.098 ; gain = 390.172 ; free physical = 2686 ; free virtual = 16858
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 2266.098 ; gain = 388.172 ; free physical = 133 ; free virtual = 17228
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 2268.098 ; gain = 390.172 ; free physical = 2686 ; free virtual = 16858
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 2266.098 ; gain = 388.172 ; free physical = 133 ; free virtual = 17228
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 2268.098 ; gain = 390.172 ; free physical = 2686 ; free virtual = 16858
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 2266.098 ; gain = 388.172 ; free physical = 133 ; free virtual = 17228
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -550,53 +596,57 @@ Report Cell Usage:
 +------+-------+------+
 |      |Cell   |Count |
 +------+-------+------+
-|1     |BUFG   |     2|
-|2     |CARRY4 |    24|
-|3     |LUT1   |    36|
-|4     |LUT2   |     1|
-|5     |LUT4   |    20|
-|6     |LUT5   |    36|
-|7     |LUT6   |    10|
-|8     |FDRE   |    64|
-|9     |LD     |    37|
-|10    |IBUF   |     1|
-|11    |OBUF   |     1|
+|1     |BUFG   |     4|
+|2     |CARRY4 |    28|
+|3     |LUT1   |    37|
+|4     |LUT2   |    51|
+|5     |LUT3   |    39|
+|6     |LUT4   |    14|
+|7     |LUT5   |    13|
+|8     |LUT6   |    12|
+|9     |FDRE   |    32|
+|10    |LD     |    68|
+|11    |LDP    |     1|
+|12    |IBUF   |     1|
+|13    |OBUF   |     1|
 +------+-------+------+
 
 Report Instance Areas: 
-+------+-----------------+---------------+------+
-|      |Instance         |Module         |Cells |
-+------+-----------------+---------------+------+
-|1     |top              |               |   232|
-|2     |  colour_decoder |colour_decoder |   177|
-|3     |    counter      |counter_0      |    58|
-|4     |  counter        |counter        |    50|
-+------+-----------------+---------------+------+
++------+-------------------+---------------+------+
+|      |Instance           |Module         |Cells |
++------+-------------------+---------------+------+
+|1     |top                |               |   301|
+|2     |  write_24b        |write_24b      |   295|
+|3     |    colour_decoder |colour_decoder |   172|
+|4     |      counter      |counter_0      |    44|
+|5     |    counter        |counter        |    59|
++------+-------------------+---------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 2268.098 ; gain = 390.172 ; free physical = 2686 ; free virtual = 16858
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 2266.098 ; gain = 388.172 ; free physical = 133 ; free virtual = 17228
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 2268.098 ; gain = 263.438 ; free physical = 2741 ; free virtual = 16913
-Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 2268.105 ; gain = 390.172 ; free physical = 2741 ; free virtual = 16913
+Synthesis finished with 0 errors, 0 critical warnings and 10 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:26 . Memory (MB): peak = 2266.098 ; gain = 263.438 ; free physical = 181 ; free virtual = 17275
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 2266.105 ; gain = 388.172 ; free physical = 181 ; free virtual = 17275
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2268.105 ; gain = 0.000 ; free physical = 2816 ; free virtual = 16988
-INFO: [Netlist 29-17] Analyzing 61 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2266.105 ; gain = 0.000 ; free physical = 250 ; free virtual = 17344
+INFO: [Netlist 29-17] Analyzing 97 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
-INFO: [Opt 31-138] Pushed 1 inverter(s) to 3 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2268.105 ; gain = 0.000 ; free physical = 2760 ; free virtual = 16932
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 2 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2269.066 ; gain = 0.000 ; free physical = 198 ; free virtual = 17292
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 37 instances were transformed.
-  LD => LDCE: 34 instances
-  LD => LDCE (inverted pins: G): 3 instances
+  A total of 69 instances were transformed.
+  LD => LDCE: 66 instances
+  LD => LDCE (inverted pins: G): 2 instances
+  LDP => LDPE: 1 instance 
 
 INFO: [Common 17-83] Releasing license: Synthesis
-19 Infos, 108 Warnings, 100 Critical Warnings and 0 Errors encountered.
+45 Infos, 121 Warnings, 100 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:40 . Memory (MB): peak = 2268.105 ; gain = 625.250 ; free physical = 2879 ; free virtual = 17051
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2268.105 ; gain = 0.000 ; free physical = 2879 ; free virtual = 17051
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:44 . Memory (MB): peak = 2269.066 ; gain = 626.211 ; free physical = 314 ; free virtual = 17408
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2269.066 ; gain = 0.000 ; free physical = 314 ; free virtual = 17408
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint '/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/projects/neopixel/neopixel.runs/synth_1/Head.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Head_utilization_synth.rpt -pb Head_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sun Jul 10 22:19:56 2022...
+INFO: [Common 17-206] Exiting Vivado at Mon Jul 11 16:13:10 2022...

@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
-| Date         : Sun Jul 10 22:21:13 2022
+| Date         : Mon Jul 11 16:14:33 2022
 | Host         : localhost.localdomain running 64-bit Fedora release 35 (Thirty Five)
 | Command      : report_drc -file Head_drc_routed.rpt -pb Head_drc_routed.pb -rpx Head_drc_routed.rpx
 | Design       : Head
@@ -24,12 +24,12 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 2
+             Violations found: 4
 +----------+----------+-----------------------------------------------------+------------+
 | Rule     | Severity | Description                                         | Violations |
 +----------+----------+-----------------------------------------------------+------------+
 | CFGBVS-1 | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties | 1          |
-| PDRC-153 | Warning  | Gated clock check                                   | 1          |
+| PDRC-153 | Warning  | Gated clock check                                   | 3          |
 +----------+----------+-----------------------------------------------------+------------+
 
 2. REPORT DETAILS
@@ -49,7 +49,17 @@ Related violations: <none>
 
 PDRC-153#1 Warning
 Gated clock check  
-Net colour_decoder/counter/int_counter_reg[6]_1 is a gated clock net sourced by a combinational pin colour_decoder/counter/time_done_reg_i_1/O, cell colour_decoder/counter/time_done_reg_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net write_24b/colour_decoder/counter/time_done__0 is a gated clock net sourced by a combinational pin write_24b/colour_decoder/counter/time_done_reg_i_1/O, cell write_24b/colour_decoder/counter/time_done_reg_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#2 Warning
+Gated clock check  
+Net write_24b/colour_decoder/rst2_out is a gated clock net sourced by a combinational pin write_24b/colour_decoder/rst_reg_i_2/O, cell write_24b/colour_decoder/rst_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#3 Warning
+Gated clock check  
+Net write_24b/counter/int_counter_reg[6]_0 is a gated clock net sourced by a combinational pin write_24b/counter/enable_reg_i_1/O, cell write_24b/counter/enable_reg_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 

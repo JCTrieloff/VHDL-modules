@@ -38,17 +38,13 @@ end Top;
 architecture Behavioral of Top is
 
     signal CLK100MHZ: std_logic;
-    -- signal colour: std_logic_vector(23 downto 0);
     signal led: std_logic_vector(0 downto 0);
     
 begin
 
--- colour <= "000000000000000000000000";
-
 head: entity work.head
 port map(
         CLK100MHZ => CLK100MHZ,
-        -- colour => colour,
         led(0) => led(0)
         );
 

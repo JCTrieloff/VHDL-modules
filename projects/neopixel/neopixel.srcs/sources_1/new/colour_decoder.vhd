@@ -35,6 +35,7 @@ entity colour_decoder is
   Port (
         CLK100MHZ: in std_logic;
         colour: in unsigned(23 downto 0);
+        enable: in std_logic;
         data: out std_logic := '0';
         end_of_stream: out std_logic
         );
@@ -62,9 +63,7 @@ decode_proc: process(CLK100MHZ)
 begin
 if(offset = -1) then
     end_of_stream <= '1';
-    rst <= '1';
-    if(count = std_logic_vector(to_unsigned(5000, 16))) then
-        rst <= '0';
+    if(enable = '1') then
         offset <= 23;
     end if;
     

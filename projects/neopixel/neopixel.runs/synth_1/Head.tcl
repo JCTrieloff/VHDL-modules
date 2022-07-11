@@ -19,7 +19,6 @@ proc create_report { reportName command } {
 }
 set_param chipscope.maxJobs 1
 set_param xicom.use_bs_reader 1
-set_msg_config -id {Common 17-41} -limit 10000000
 create_project -in_memory -part xc7a100tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -35,6 +34,7 @@ set_property ip_cache_permissions {read write} [current_project]
 read_vhdl -library xil_defaultlib {
   /home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/projects/pwm_led/pwm_led.srcs/sources_1/new/counter.vhd
   /home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/projects/neopixel/neopixel.srcs/sources_1/new/colour_decoder.vhd
+  /home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/projects/neopixel/neopixel.srcs/sources_1/new/write_24b.vhd
   /home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/projects/neopixel/neopixel.srcs/sources_1/new/Head.vhd
 }
 # Mark all dcp files as not used in implementation to prevent them from being
