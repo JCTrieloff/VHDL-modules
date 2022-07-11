@@ -1,80 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1657484346">
-  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
-  <File Type="BITSTR-SYSDEF" Name="Head.sysdef"/>
-  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="Head.ltx"/>
-  <File Type="BG-BGN" Name="Head.bgn"/>
-  <File Type="RBD_FILE" Name="Head.rbd"/>
-  <File Type="BG-DRC" Name="Head.drc"/>
-  <File Type="NPI_FILE" Name="Head.npi"/>
-  <File Type="RNPI_FILE" Name="Head.rnpi"/>
-  <File Type="CFI_FILE" Name="Head.cfi"/>
-  <File Type="PDI-FILE" Name="Head.pdi"/>
-  <File Type="BITSTR-MMI" Name="Head.mmi"/>
-  <File Type="BITSTR-BMM" Name="Head_bd.bmm"/>
-  <File Type="BITSTR-NKY" Name="Head.nky"/>
-  <File Type="BITSTR-RBT" Name="Head.rbt"/>
-  <File Type="BITSTR-MSK" Name="Head.msk"/>
+  <File Type="PA-TCL" Name="Head.tcl"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="Head_bus_skew_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="Head_reports.tcl"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="Head_bus_skew_routed.rpx"/>
+  <File Type="OPT-DCP" Name="Head_opt.dcp"/>
+  <File Type="OPT-DRC" Name="Head_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="Head.hwdef"/>
+  <File Type="PWROPT-DCP" Name="Head_pwropt.dcp"/>
+  <File Type="PLACE-DCP" Name="Head_placed.dcp"/>
+  <File Type="PLACE-IO" Name="Head_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="Head_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="Head_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="Head_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="Head_incremental_reuse_pre_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="Head_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="Head_physopt.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="Head_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="Head_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="Head_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="Head_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="Head_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="Head_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="Head_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Head_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Head_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="Head_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="Head_power_summary_routed.pb"/>
   <File Type="BG-BIN" Name="Head.bin"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="Head_timing_summary_routed.rpt"/>
+  <File Type="BITSTR-MSK" Name="Head.msk"/>
+  <File Type="CFI_FILE" Name="Head.cfi"/>
+  <File Type="ROUTE-TIMING-PB" Name="Head_timing_summary_routed.pb"/>
+  <File Type="BITSTR-RBT" Name="Head.rbt"/>
+  <File Type="RNPI_FILE" Name="Head.rnpi"/>
+  <File Type="ROUTE-TIMING-RPX" Name="Head_timing_summary_routed.rpx"/>
+  <File Type="BITSTR-NKY" Name="Head.nky"/>
+  <File Type="BITSTR-BMM" Name="Head_bd.bmm"/>
+  <File Type="ROUTE-CLK" Name="Head_clock_utilization_routed.rpt"/>
+  <File Type="BITSTR-MMI" Name="Head.mmi"/>
+  <File Type="ROUTE-BUS-SKEW" Name="Head_bus_skew_routed.rpt"/>
+  <File Type="PDI-FILE" Name="Head.pdi"/>
+  <File Type="RBD_FILE" Name="Head.rbd"/>
+  <File Type="BG-BGN" Name="Head.bgn"/>
+  <File Type="BITSTR-SYSDEF" Name="Head.sysdef"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="BITSTR-LTX" Name="Head.ltx"/>
+  <File Type="NPI_FILE" Name="Head.npi"/>
+  <File Type="BG-DRC" Name="Head.drc"/>
   <File Type="RCFI_FILE" Name="Head.rcfi"/>
   <File Type="BG-BIT" Name="Head.bit"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="Head_bus_skew_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="Head_bus_skew_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="Head_bus_skew_postroute_physopted.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="Head_route_status.pb"/>
   <File Type="RDI-RDI" Name="Head.vdi"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="Head_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="Head_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="Head_timing_summary_postroute_physopted.rpt"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="Head_postroute_physopt_bb.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="Head_postroute_physopt.dcp"/>
-  <File Type="ROUTE-BUS-SKEW" Name="Head_bus_skew_routed.rpt"/>
-  <File Type="ROUTE-CLK" Name="Head_clock_utilization_routed.rpt"/>
-  <File Type="ROUTE-SIMILARITY" Name="Head_incremental_reuse_routed.rpt"/>
-  <File Type="ROUTE-TIMING-RPX" Name="Head_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-TIMING-PB" Name="Head_timing_summary_routed.pb"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="Head_timing_summary_routed.rpt"/>
-  <File Type="ROUTE-STATUS-PB" Name="Head_route_status.pb"/>
   <File Type="ROUTE-STATUS" Name="Head_route_status.rpt"/>
   <File Type="ROUTE-PWR-RPX" Name="Head_power_routed.rpx"/>
-  <File Type="ROUTE-PWR-SUM" Name="Head_power_summary_routed.pb"/>
-  <File Type="ROUTE-PWR" Name="Head_power_routed.rpt"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Head_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Head_methodology_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="Head_methodology_drc_routed.rpt"/>
-  <File Type="ROUTE-DRC-RPX" Name="Head_drc_routed.rpx"/>
-  <File Type="ROUTE-DRC-PB" Name="Head_drc_routed.pb"/>
-  <File Type="ROUTE-DRC" Name="Head_drc_routed.rpt"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="Head_routed_bb.dcp"/>
-  <File Type="ROUTE-DCP" Name="Head_routed.dcp"/>
-  <File Type="ROUTE-ERROR-DCP" Name="Head_routed_error.dcp"/>
-  <File Type="PHYSOPT-TIMING" Name="Head_timing_summary_physopted.rpt"/>
-  <File Type="PHYSOPT-DRC" Name="Head_drc_physopted.rpt"/>
-  <File Type="PHYSOPT-DCP" Name="Head_physopt.dcp"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="Head_timing_summary_postplace_pwropted.rpt"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="Head_postplace_pwropt.dcp"/>
-  <File Type="PLACE-TIMING" Name="Head_timing_summary_placed.rpt"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="Head_incremental_reuse_pre_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="Head_incremental_reuse_placed.rpt"/>
-  <File Type="PLACE-CTRL" Name="Head_control_sets_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="Head_utilization_placed.pb"/>
-  <File Type="PLACE-UTIL" Name="Head_utilization_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="Head_clock_utilization_placed.rpt"/>
-  <File Type="PLACE-IO" Name="Head_io_placed.rpt"/>
-  <File Type="PLACE-DCP" Name="Head_placed.dcp"/>
-  <File Type="PWROPT-TIMING" Name="Head_timing_summary_pwropted.rpt"/>
-  <File Type="PWROPT-DRC" Name="Head_drc_pwropted.rpt"/>
-  <File Type="PWROPT-DCP" Name="Head_pwropt.dcp"/>
-  <File Type="OPT-TIMING" Name="Head_timing_summary_opted.rpt"/>
-  <File Type="OPT-HWDEF" Name="Head.hwdef"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="Head_methodology_drc_opted.rpt"/>
-  <File Type="OPT-DRC" Name="Head_drc_opted.rpt"/>
-  <File Type="OPT-DCP" Name="Head_opt.dcp"/>
-  <File Type="INIT-TIMING" Name="Head_timing_summary_init.rpt"/>
-  <File Type="ROUTE-BUS-SKEW-RPX" Name="Head_bus_skew_routed.rpx"/>
-  <File Type="REPORTS-TCL" Name="Head_reports.tcl"/>
-  <File Type="ROUTE-BUS-SKEW-PB" Name="Head_bus_skew_routed.pb"/>
-  <File Type="PA-TCL" Name="Head.tcl"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PPRDIR/../pwm_led/pwm_led.srcs/sources_1/new/counter.vhd">
@@ -120,9 +101,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
-      <Desc>Default settings for Implementation.</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
     <Step Id="init_design"/>
     <Step Id="opt_design"/>
     <Step Id="power_opt_design"/>
@@ -132,5 +111,6 @@
     <Step Id="route_design"/>
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
   </Strategy>
 </GenRun>

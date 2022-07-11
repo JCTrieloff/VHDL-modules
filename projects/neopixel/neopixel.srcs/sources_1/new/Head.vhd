@@ -41,9 +41,10 @@ end Head;
 architecture Behavioral of Head is
 
     signal rst: std_logic := '0';
-    signal count: std_logic_vector(31 downto 0);
-    signal end_of_stream: std_logic := '1';
+    signal count: std_logic_vector(15 downto 0);
+    signal end_of_stream: std_logic;
     signal enable: std_logic := '0';
+    signal colour: unsigned(23 downto 0);
     
 begin
 colour_decoder: entity work.colour_decoder
@@ -51,7 +52,7 @@ port map(
         CLK100MHZ => CLK100MHZ,
         data => led(0),
         end_of_stream => end_of_stream,
-        enable => enable
+        colour => colour
         );
         
 counter: entity work.counter
@@ -61,15 +62,10 @@ port map(
         count => count
         );
         
-chron_proc: process
+chron_proc: process(end_of_stream)
 begin
     if(end_of_stream = '1') then
-        enable <= '1';
-        rst <= '1';
-        if(count = std_logic_vector(to_unsigned(500000000, 32))) then
-            rst <= '0';
-            enable <= '0';
-        end if;
+        colour <= to_unsigned(0, 24);
     end if;
 end process;
         

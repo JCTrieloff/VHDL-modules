@@ -36,18 +36,18 @@ entity counter is
     Port (
         clk: in std_logic;
         rst: in std_logic;
-        count: out std_logic_vector(31 downto 0)
+        count: out std_logic_vector(15 downto 0)
         );
 end counter;
 
 architecture impl of counter is
-    signal int_counter: unsigned(31 downto 0);
+    signal int_counter: unsigned(15 downto 0) := to_unsigned(0, 16);
 begin
-    counter_prcs: process(clk) is
+    counter_prcs: process(clk)
     begin
         if (rising_edge(clk)) then
             if (rst = '0') then
-                int_counter <= to_unsigned(0, 32);
+                int_counter <= to_unsigned(0, 16);
             else
                 int_counter <= int_counter + 1;
             end if;

@@ -39,7 +39,7 @@ architecture Behavioral of Top is
 
     signal CLK100MHZ: std_logic;
     -- signal colour: std_logic_vector(23 downto 0);
-    signal data: std_logic;
+    signal led: std_logic_vector(0 downto 0);
     
 begin
 
@@ -49,10 +49,10 @@ head: entity work.head
 port map(
         CLK100MHZ => CLK100MHZ,
         -- colour => colour,
-        led(0) => data
+        led(0) => led(0)
         );
 
-clk_proc: process
+clk_proc: process is
 begin
     CLK100MHZ <= '1';
     wait for 5 ns;
