@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../memory.srcs/sources_1/new/latch.vhd" \
+"../../../../memory.srcs/sources_1/new/mem_512bit.vhd" \
+
+# Do not sort compile order
+nosort

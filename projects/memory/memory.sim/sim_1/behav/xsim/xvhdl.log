@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/projects/memory/memory.srcs/sources_1/new/mem_512bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mem_512bit'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/projects/memory/memory.srcs/sim_1/new/top_sim.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'top_sim'
