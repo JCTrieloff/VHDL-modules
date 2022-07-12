@@ -36,17 +36,17 @@ entity mem_512bit is
         CLK100MHZ: in std_logic;
         rw: in std_logic; -- 1 for read, 0 for write
         address_read: in natural;
-        address_write: in natural;
+        address_write: in integer;
         value_write: in std_logic;
-        value_read: out std_logic;
-        R: in std_logic_vector(511 downto 0) := std_logic_vector(to_unsigned(0, 512))
+        value_read: out std_logic_vector(23 downto 0);
+        R: in std_logic_vector(719 downto 0) := std_logic_vector(to_unsigned(0, 720))
         );
 end mem_512bit;
 
 architecture impl of mem_512bit is
     
     signal CLK: std_logic := '1';
-    signal D, Q: std_logic_vector(511 downto 0);
+    signal D, Q: std_logic_vector(719 downto 0);
     
 begin
 
@@ -62,7 +62,7 @@ read_write_proc: process(CLK100MHZ)
 begin
     if(falling_edge(CLK100MHZ)) then
         if(rw = '1') then
-            value_read <= Q(address_read);
+            value_read <= Q((24*address_read)-1 downto (24*address_read)-24);
         elsif(rw = '0') then
             D(address_write) <= value_write;
             CLK <= '0';

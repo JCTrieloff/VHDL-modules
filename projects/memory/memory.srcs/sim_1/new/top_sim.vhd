@@ -24,7 +24,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
+use IEEE.NUMERIC_STD.ALL;
 
 -- Uncomment the following library declaration if instantiating
 -- any Xilinx leaf cells in this code.
@@ -43,6 +43,7 @@ architecture Behavioral of top_sim is
     signal address_write: natural;
     signal value_write: std_logic;
     signal value_read: std_logic;
+    signal R: std_logic_vector(511 downto 0) := std_logic_vector(to_unsigned(0, 512));
 
 begin
 
@@ -53,7 +54,8 @@ port map(
         address_read => address_read,
         address_write => address_write,
         value_read => value_read,
-        value_write => value_write
+        value_write => value_write,
+        R => R
         );
 
 clk_proc: process
@@ -66,16 +68,20 @@ end process;
 
 test_proc: process
 begin
-    wait for 5 ns;
+    wait for 10 ns;
     address_write <= 3;
     value_write <= '1';
     rw <= '0';
-    wait for 5 ns;
-    rw <= 'U';
+    wait for 10 ns;
     address_read <= 3;
     rw <= '1';
-    wait for 5 ns;
-    rw <= 'U';
+    wait for 10 ns;
+    for i in 0 to 511
+    loop
+        R(i) <= '1';
+    end loop;
+    wait;
+              
 end process;
 
 end Behavioral;

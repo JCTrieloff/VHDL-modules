@@ -13,6 +13,8 @@ Compiling package ieee.std_logic_1164
 Compiling package ieee.numeric_std
 Compiling architecture impl of entity xil_defaultlib.counter [counter_default]
 Compiling architecture behavioral of entity xil_defaultlib.colour_decoder [colour_decoder_default]
+Compiling architecture impl of entity xil_defaultlib.latch [latch_default]
+Compiling architecture impl of entity xil_defaultlib.mem_512bit [mem_512bit_default]
 Compiling architecture behavioral of entity xil_defaultlib.write_24b [write_24b_default]
 Compiling architecture behavioral of entity xil_defaultlib.Head [head_default]
 Compiling architecture behavioral of entity xil_defaultlib.top
