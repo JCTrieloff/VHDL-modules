@@ -84,6 +84,7 @@ begin
         end_of_stream_flag := '1';
         rst <= '0';
         rst_off <= '0';
+        led <= '0';
     end if;
     
     if(start_stream = '1') then

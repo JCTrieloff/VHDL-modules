@@ -80,16 +80,13 @@ begin
             start_stream <= '0';
         end if;
     end if;
-
-    -- stop execution of write_stream
-    if(end_of_stream = '1' and rising_edge(CLK100MHZ)) then
-        start_stream <= '0';
-    end if;
+    
     
     -- if write_stream is stopped, check how many pixels sent, 
     -- then restart stream with 50 us delay if all pixels are written
-    if(rising_edge(CLK100MHZ) and start_stream = '0') then
+    if(rising_edge(CLK100MHZ) and end_of_stream = '1') then
         if(pixels_sent = num_pixels) then
+            start_stream <= '0';
             rst <= '1';
             if(count = std_logic_vector(to_unsigned(5000, 16))) then
                 rst <= '0';
