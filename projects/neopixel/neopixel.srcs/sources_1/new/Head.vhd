@@ -41,6 +41,8 @@ end Head;
 architecture Behavioral of Head is
 
     signal num_pixels: integer := 5;
+    signal rst: std_logic := '0';
+    signal count: std_logic_vector(15 downto 0);
     
 begin
 
@@ -51,5 +53,11 @@ port map(
         num_pixels => num_pixels
         );
         
+counter: entity work.counter
+port map(
+        clk => CLK100MHZ,
+        rst => rst,
+        count => count
+        );
 
 end Behavioral;

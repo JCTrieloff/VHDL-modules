@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
-| Date         : Mon Jul 11 16:14:08 2022
+| Date         : Tue Jul 12 15:44:36 2022
 | Host         : localhost.localdomain running 64-bit Fedora release 35 (Thirty Five)
 | Command      : report_control_sets -verbose -file Head_control_sets_placed.rpt
 | Design       : Head
@@ -58,7 +58,7 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              68 |           30 |
+| No           | No                    | No                     |              68 |           28 |
 | No           | No                    | Yes                    |               0 |            0 |
 | No           | Yes                   | No                     |              33 |            9 |
 | Yes          | No                    | No                     |               0 |            0 |
@@ -73,14 +73,14 @@ Table of Contents
 +------------------------------------------------+---------------+---------------------------------------------+------------------+----------------+
 |                  Clock Signal                  | Enable Signal |               Set/Reset Signal              | Slice Load Count | Bel Load Count |
 +------------------------------------------------+---------------+---------------------------------------------+------------------+----------------+
-|  write_24b/counter/int_counter_reg[6]_0        |               | write_24b/colour_decoder/enable__0          |                1 |              1 |
-|  write_24b/colour_decoder/rst2_out             |               |                                             |                1 |              1 |
+|  write_24b/counter/int_counter_reg[3]_1        |               | write_24b/colour_decoder/enable__0          |                1 |              1 |
 |  write_24b/colour_decoder/counter/time_done__0 |               |                                             |                1 |              1 |
-| ~n_0_55_BUFG                                   |               |                                             |                2 |              2 |
-|  CLK100MHZ_IBUF_BUFG                           |               | write_24b/counter/int_counter[0]_i_1__0_n_2 |                4 |             16 |
+|  write_24b/colour_decoder/enable_reg           |               |                                             |                1 |              1 |
+|  write_24b/colour_decoder/data_reg_i_2_n_1     |               |                                             |                1 |              2 |
+|  CLK100MHZ_IBUF_BUFG                           |               | write_24b/counter/int_counter[0]_i_1__0_n_1 |                4 |             16 |
 |  CLK100MHZ_IBUF_BUFG                           |               | write_24b/colour_decoder/counter/clear      |                4 |             16 |
-|  n_1_53_BUFG                                   |               |                                             |               15 |             32 |
-|  packets_sent0                                 |               |                                             |               11 |             32 |
+|  n_0_18_BUFG                                   |               |                                             |               13 |             32 |
+|  packets_sent0                                 |               |                                             |               12 |             32 |
 +------------------------------------------------+---------------+---------------------------------------------+------------------+----------------+
 
 

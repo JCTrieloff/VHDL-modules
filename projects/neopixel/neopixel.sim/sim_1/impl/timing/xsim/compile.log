@@ -1,0 +1,7 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/projects/neopixel/neopixel.sim/sim_1/impl/timing/xsim/Top_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Head
+INFO: [VRFC 10-311] analyzing module colour_decoder
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-311] analyzing module counter_0
+INFO: [VRFC 10-311] analyzing module write_24b
+INFO: [VRFC 10-311] analyzing module glbl
