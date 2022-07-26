@@ -2,9 +2,9 @@
 -- Company: 
 -- Engineer: 
 -- 
--- Create Date: 07/05/2022 06:10:36 PM
+-- Create Date: 07/21/2022 09:30:14 PM
 -- Design Name: 
--- Module Name: comparator - impl
+-- Module Name: pwm_module - impl
 -- Project Name: 
 -- Target Devices: 
 -- Tool Versions: 
@@ -24,24 +24,41 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
-use IEEE.NUMERIC_STD.ALL;
---use IEEE.STD_LOGIC_ARITH.ALL;
+--use IEEE.NUMERIC_STD.ALL;
+
 -- Uncomment the following library declaration if instantiating
 -- any Xilinx leaf cells in this code.
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity comparator is
+entity pwm_module is
   Port (
-  counter: in unsigned(6 downto 0);
-  threshold: in unsigned(6 downto 0);
-  above_thresh: out std_logic
-  );
-end comparator;
+        MSB: in std_logic;
+        clk: in std_logic;
+        rst: in std_logic;
+        led: out std_logic
+        );
+end pwm_module;
 
-architecture impl of comparator is
+architecture impl of pwm_module is
+
+    signal threshold: std_logic_vector(6 downto 0);
 
 begin
-    above_thresh <= '1' when (counter > threshold) else '0';
+
+    mux: entity work.mux
+    port map(
+             v         => MSB,
+             threshold => threshold
+             );
+             
+    pwm: entity work.pwm_gen
+    port map(
+             clk => clk,
+             thresh => threshold,
+             rst => rst,
+             pwm => led
+             );
+             
 
 end impl;

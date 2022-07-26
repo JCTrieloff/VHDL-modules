@@ -33,14 +33,14 @@ use IEEE.NUMERIC_STD.ALL;
 
 entity pwm_gen is
   Port (clk:in std_logic;
-        thresh:in std_logic_vector(15 downto 0);
+        thresh:in std_logic_vector(6 downto 0);
         rst:in std_logic;
         pwm: out std_logic
         );
 end pwm_gen;
 
 architecture impl of pwm_gen is
-    signal countsig: unsigned(15 downto 0);
+    signal countsig: unsigned(6 downto 0);
 begin
     count:entity work.counter
     port map(
