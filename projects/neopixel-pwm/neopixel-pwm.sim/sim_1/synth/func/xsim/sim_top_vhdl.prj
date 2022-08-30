@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"sim_top_func_synth.vhd" \
+"../../../../../neopixel-pwm.srcs/sim_1/new/sim_top.vhd" \
+
+# Do not sort compile order
+nosort

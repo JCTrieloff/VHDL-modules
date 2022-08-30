@@ -42,7 +42,7 @@ end shift_register;
 
 architecture impl of shift_register is
 
-    signal reg_contents: std_logic_vector(23 downto 0);
+    signal reg_contents: std_logic_vector(23 downto 0) := std_logic_vector(to_unsigned(0, 24));
     signal intermediate: std_logic_vector(22 downto 0);
 
 begin

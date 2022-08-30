@@ -32,26 +32,28 @@ use IEEE.NUMERIC_STD.ALL;
 --use UNISIM.VComponents.all;
 
 entity pwm_gen is
-  Port (clk:in std_logic;
-        thresh:in std_logic_vector(6 downto 0);
-        rst:in std_logic;
-        pwm: out std_logic
+  Port (clk:    in std_logic;
+        max:    in std_logic_vector(15 downto 0);
+        thresh: in std_logic_vector(15 downto 0);
+        rst:    in std_logic;
+        pwm:    out std_logic
         );
 end pwm_gen;
 
 architecture impl of pwm_gen is
-    signal countsig: unsigned(6 downto 0);
+    signal countsig: unsigned(15 downto 0);
 begin
     count:entity work.counter
     port map(
-            clk=>clk,
-            rst=>rst,
-            unsigned(count)=>countsig
+            clk             => clk,
+            rst             => rst,
+            max             => max,
+            unsigned(count) => countsig
             );
     comp:entity work.comparator
     port map(
-            counter => countsig,
-            threshold=> unsigned(thresh),
-            above_thresh=>pwm
+            counter      => countsig,
+            threshold    => unsigned(thresh),
+            above_thresh => pwm
             );
 end impl;

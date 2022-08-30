@@ -33,8 +33,8 @@ use IEEE.NUMERIC_STD.ALL;
 
 entity comparator is
   Port (
-  counter: in unsigned(6 downto 0);
-  threshold: in unsigned(6 downto 0);
+  counter: in unsigned(15 downto 0);
+  threshold: in unsigned(15 downto 0);
   above_thresh: out std_logic
   );
 end comparator;
@@ -42,6 +42,6 @@ end comparator;
 architecture impl of comparator is
 
 begin
-    above_thresh <= '1' when (counter > threshold) else '0';
+    above_thresh <= '0' when (counter > threshold) else '1';
 
 end impl;

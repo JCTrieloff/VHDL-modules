@@ -2,9 +2,9 @@
 -- Company: 
 -- Engineer: 
 -- 
--- Create Date: 07/21/2022 07:39:55 PM
+-- Create Date: 08/28/2022 12:05:44 PM
 -- Design Name: 
--- Module Name: mux - impl
+-- Module Name: mux - Behavioral
 -- Project Name: 
 -- Target Devices: 
 -- Tool Versions: 
@@ -32,20 +32,15 @@ use IEEE.NUMERIC_STD.ALL;
 --use UNISIM.VComponents.all;
 
 entity mux is
-  Port (
-        v:          in std_logic;
-        threshold:  out std_logic_vector(6 downto 0)
-       );
+  Port (sel:   in std_logic;
+        out0:  in std_logic_vector(15 downto 0);
+        out1:  in std_logic_vector(15 downto 0);
+        value: out std_logic_vector(15 downto 0)
+        );
 end mux;
 
-architecture impl of mux is
-
-  signal one_ratio:  std_logic_vector(6 downto 0);
-  signal zero_ratio: std_logic_vector(6 downto 0);
-  signal and_mask:   std_logic_vector(6 downto 0) := v&v&v&v&v&v&v;
+architecture Behavioral of mux is
 
 begin
-  
-  threshold <= (one_ratio and and_mask) or (zero_ratio and (not and_mask));
-
-end impl;
+    value <= out0 when (sel = '0') else out1;
+end Behavioral;

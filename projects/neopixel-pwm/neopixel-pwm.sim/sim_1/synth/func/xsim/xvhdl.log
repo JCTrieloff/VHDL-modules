@@ -1,0 +1,10 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/projects/neopixel-pwm/neopixel-pwm.sim/sim_1/synth/func/xsim/sim_top_func_synth.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'clk_wiz_0_clk_wiz_0_clk_wiz'
+INFO: [VRFC 10-3107] analyzing entity 'comparator'
+INFO: [VRFC 10-3107] analyzing entity 'counter'
+INFO: [VRFC 10-3107] analyzing entity 'shift_register'
+INFO: [VRFC 10-3107] analyzing entity 'clk_wiz_0'
+INFO: [VRFC 10-3107] analyzing entity 'pwm_gen'
+INFO: [VRFC 10-3107] analyzing entity 'sig_gen'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/projects/neopixel-pwm/neopixel-pwm.srcs/sim_1/new/sim_top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'sim_top'

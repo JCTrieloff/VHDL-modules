@@ -2,9 +2,9 @@
 -- Company: 
 -- Engineer: 
 -- 
--- Create Date: 07/21/2022 09:30:14 PM
+-- Create Date: 08/28/2022 03:28:42 PM
 -- Design Name: 
--- Module Name: pwm_module - impl
+-- Module Name: sim_top - Behavioral
 -- Project Name: 
 -- Target Devices: 
 -- Tool Versions: 
@@ -31,34 +31,29 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity pwm_module is
-  Port (
-        MSB: in std_logic;
-        clk: in std_logic;
-        rst: in std_logic;
-        led: out std_logic
-        );
-end pwm_module;
+entity sim_top is
+--  Port ( );
+end sim_top;
 
-architecture impl of pwm_module is
-
-    signal threshold: std_logic_vector(6 downto 0);
-
+architecture Behavioral of sim_top is
+    signal CLK100MHZ: std_logic;
+    signal sig:       std_logic;
+    signal reset:     std_logic;
+    
 begin
-
-    mux: entity work.mux
+    ctrl:entity work.sig_gen
     port map(
-             v         => MSB,
-             threshold => threshold
-             );
-             
-    pwm: entity work.pwm_gen
-    port map(
-             clk => clk,
-             thresh => threshold,
-             rst => rst,
-             pwm => led
-             );
-             
+            CLK100MHZ => CLK100MHZ,
+            reset => reset,
+            sig => sig
+            );
+    reset <= '0';
+    clk_proc: process
+    begin
+        wait for 5 ns;
+        CLK100MHZ <= '1';
+        wait for 5 ns;
+        CLK100MHZ <= '0';
+    end process;
 
-end impl;
+end Behavioral;

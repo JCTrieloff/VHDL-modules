@@ -1,0 +1,7 @@
+0.6
+2019.2
+Nov  6 2019
+21:42:20
+/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/projects/neopixel-pwm/neopixel-pwm.sim/sim_1/synth/func/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/projects/neopixel-pwm/neopixel-pwm.sim/sim_1/synth/func/xsim/sim_top_func_synth.vhd,1661717409,vhdl,/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/projects/neopixel-pwm/neopixel-pwm.srcs/sim_1/new/sim_top.vhd,,,clk_wiz_0;clk_wiz_0_clk_wiz_0_clk_wiz;comparator;counter;pwm_gen;shift_register;sig_gen,,,,,,,,
+/home/jtrieloff/cern/Xilinx/Vivado/2019.2/VHDL-modules/projects/neopixel-pwm/neopixel-pwm.srcs/sim_1/new/sim_top.vhd,1661715225,vhdl,,,,sim_top,,,,,,,,
